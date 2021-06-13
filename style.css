@@ -5,25 +5,50 @@
 }
 
 body{
+     
     font-family: 'Merriweather', serif;
     background-color: #ebf2ff;
 }
 
+.button_primary{
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+
+    color: #fff;
+    border:none;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.container{
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto
+}
+
 .navbar{
+     
     display:flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #fff;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     
 }
 
 .navbar_brand{
     width: 100px;
+    margin-left: 10px;
     
 }
 
 .navbar_logo{
-    width: 100%;
+    width: 110%;
     
 }
 
@@ -38,6 +63,7 @@ body{
     color: #fff;
     border:none;
     padding: 10px;
+    margin-right: 20px;
     border-radius: 6px;
     cursor: pointer;
     
@@ -45,10 +71,142 @@ body{
     border: 2px solid rgb(146, 129, 207);
 }
 
+.hero_container{
+    margin: 20px 0;
+    
+}
+.hero_image_container{
+    width: 100%;
+    border-radius: 8px;
+}
+.hero_image{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+
+.hero_text{
+    font-size: 30px;
+     
+    padding: 20px 0;
+}
+.hero_button{
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+
+    color: #fff;
+    border:none;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 10px 15px;
+}
+
+.explore_container{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.explore_title{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.explore_food_lists{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+    
+}
+.food_card{
+    width: 100%;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    border-radius: 10px ;
+
+}
+.food_card_image{
+    width: 100%;
+    margin-bottom: 3px;
+    border-radius: 10px 10px 0px 0px;
+}
+.food_card_description{
+    margin: 15px;
+}
+.button_explore{
+    width: 100%;
+    padding: 15px 0px;
+    font-size: 18px;
+}
+
+
+
 @media  (min-width: 768px){
     .navbar{
         justify-content: space-between;
-        padding: 0px 30px;
+        max-height: 70px; 
+    }
+    .button_primary{
+         
+        font-size:15px;
+    }
+    
+    .hero_container{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .explore_container{
+        position: relative;
+        margin-top: 150px;
+    }
+
+    .explore_title{
+       margin-bottom: 50px;
+       font-size: 35px; 
+    }
+
+    .explore_food_lists{
+        flex-direction: row;
+        padding: 0 30px;
+    }
+
+    #pizza{
+        margin-top: -30px;
+        margin-bottom: 30px;
+    }
+
+    .button_explore{
+        width: 35%;
+        margin: 0px 240px; 
+        padding: 5px 0px;
+        font-size: 18px;
+    }
+
+    .explore_gradient_bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(
+            to right,
+            #ff512f 0%,
+            #dd2476 51%,
+            #ff512f 100%
+        );
+        transform: skewY(-5deg);
+        z-index: -3;
     }
 }
 
@@ -56,9 +214,44 @@ body{
     .navbar_brand{
         width: 150px;
     }
-    .nav_item{
-        padding: 20px;
-        font-size:20px;
+    .button_primary{
+        padding: 12px 15px;
+        font-size:18px;
+    }
+    .container{
+        max-width: 900px;
+    }
+    .hero_description{
+        width: 100%;
+    }
+     
+    .hero_text{
+        font-size: 35px;
+    }
+    .explore_title{
+        margin-bottom: 50px;
+        font-size: 40px; 
+     }
+ 
+    .button_explore{
+        margin: 0px 280px;
+    }
+    
+}
+
+@media (min-width: 1350px){
+    .container{
+        max-width: 1165px;
     }
 
+    .hero_text{
+        font-size: 45px;
+    }
+    .hero_image{
+        width: 100%;
+    }
+    .button_explore{
+        margin: 0px 370px;
+    }
 }
+
