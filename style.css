@@ -106,6 +106,10 @@ body{
     border-radius: 6px;
     cursor: pointer;
     margin: 10px 15px;
+    
+}
+.hero_button:hover{
+    border: 2px solid rgb(247, 91, 91);
 }
 
 .explore_container{
@@ -217,13 +221,53 @@ body{
     color: rgb(27, 19, 82);
     text-align:start;
     border: none;
-    background-color: rgb(226, 199, 199);
+    background-color: #fcedf0;
     border-radius: 4px;
 }
 .button_email{
     width: 30%;   
     font-size: 14px;
     border-radius: 4px;
+}
+.quote_container{
+    position: relative;
+    margin: 50px 0;
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+}
+.quote_image{
+    
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 15px;
+
+}
+.quote_shade{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+
+    background-color: #0a4065;
+    opacity: 45%;
+    z-index: 0;
+}
+.quote_text_container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 65px 15px;
+    z-index: 2;
+}
+.quote_text{
+    color: #fff;
 }
 footer{
     background-image: linear-gradient(
@@ -267,7 +311,7 @@ ul{
     .hero_text{
         font-size: 35px;
     }
-
+   
     .explore_container{
         position: relative;
         margin-top: 120px;
@@ -346,10 +390,31 @@ ul{
         padding: 0 150px;
         width: 100%;
     }
+    .quote_container{
+        height: 300px;
+        width: 100%;
+        margin-bottom: 0;
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+    }
+    .quote_image{
+        
+        height:auto;
+    }
+    .quote_text_container{
+        padding: auto 0;
+        height: auto;
+        top: auto;
+    }
+    .quote_text{
+        font-size: 2rem;
+        font-weight: 500;
+    }
     footer{
         flex-direction: row;
         justify-content: space-evenly;
-        margin-top: 150px;
+        margin-top: 100px;
     }
     .footer_logo{
         width: 45%;
